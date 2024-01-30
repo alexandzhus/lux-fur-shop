@@ -13,11 +13,16 @@ class Product(models.Model):
     slug = models.SlugField(max_length=255, unique=True, verbose_name="Slug", db_index=True)
     image = models.ImageField(upload_to='product_images/%Y/%m/%d/', null=True, blank=True, default=None,
                               verbose_name="Изображение")
+    material = models.CharField(max_length=255, blank=True, verbose_name="Материал")
+    description = models.TextField(blank=True, verbose_name="Описание товара")
     vendor_code = models.IntegerField(null=True, blank=True, default=None, unique=True, verbose_name="Артикул")
     time_create = models.DateTimeField(auto_now_add=True, verbose_name="Время создания")
     time_update = models.DateTimeField(auto_now=True, verbose_name="Время изменения")
     category = models.ForeignKey('Category', on_delete=models.PROTECT, related_name='products',
                                  verbose_name="Категория")
+    height = models.FloatField(blank=True, null=True, verbose_name="Высота", default=0)
+    length = models.FloatField(blank=True, null=True, verbose_name="Длина", default=0)
+    width = models.FloatField(blank=True, null=True, verbose_name="Ширина", default=0)
 
     def __str__(self):
         return self.name
