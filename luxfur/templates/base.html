@@ -13,17 +13,33 @@
 <!--блок главное меню-->
 {% block mainmenu %}
     <div class="header">
-        <ul id="mainmenu" class="mainmenu">
-            <li  class="logo" title="Главная страница"><a href="{% url 'home' %}"></a><div class="logo"></div></li>
+        <ul  id="mainmenu" class="mainmenu">
+            <li  class="logo" title="Главная страница"><a href="{% url 'home' %}"><div class="logo"></div></a></li>
+            {% for m in mainmenu %}
+                <li class="main-menu"><p><a href="#">{{m.title}}</a></p></li>
+            {% endfor %}
+            {% if user.is_authenticated %}
+                <li> {{user.username}} |
+                    <form method="post" action="{% url 'users:logout' %}">
+                        {% csrf_token %}
+                        <button type="submit">Выйти</button>
+                    </form>
+                </li>
+            {% else %}
+                <li><a href="{% url 'users:login' %}">Авторизация</a></li>
+            {% endif %}
+
 
         </ul>
+
     </div>
+
 {% endblock %}
 <!--Конец блока главное меню-->
 
 
 <!-- Блок контента-->
-<div>
+<div class="content">
     {% block content %}
     {% endblock %}
 </div>
@@ -32,7 +48,7 @@
 <!--Футер-->
 <footer>
    <div id="footer">
-		<p>&copy; 2023 Частичное или полное копирование информации с данного сайта для распространения на других ресурсах, в том числе и бумажных, строго запрещено.</p>
+		<p class="footer-text">&copy; 2023 Частичное или полное копирование информации с данного сайта для распространения на других ресурсах, в том числе и бумажных, строго запрещено.</p>
 	</div>
 </footer>
 <!--конец футера и страницы-->
