@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Артикул: {{product.vendor_code}}</p>
+{% if product.image %}
+    <p><img src="{{product.image.url}}"></p>
+{% endif %}
+    <h1>{{product.name}}</h1>
+
+    <p>Описание: {{product.description}}</p>
+    <p>Общее кол-во: {{product.quantity}}</p>
+    <p>Материал изделия: {{product.material}}</p>
+    <p>Высота: {{product.height}}</p>
+    <p>Длина: {{product.length}}</p>
+    <p>Ширина: {{product.width}}</p>
+
+{{ product.descriptions }}
+{% endblock %}
+
