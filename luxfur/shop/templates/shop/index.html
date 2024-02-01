@@ -10,5 +10,6 @@
         {% autoescape off %}
 		    {{ p.description|linebreaks|truncatewords:40 }}
 		{% endautoescape %}
+        <p><a href="{{ p.get_absolute_url }}">Подробнее</a></p>
     {% endfor %}
 {% endblock %}
