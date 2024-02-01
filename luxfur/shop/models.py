@@ -13,6 +13,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=255, unique=True, verbose_name="Slug", db_index=True)
     image = models.ImageField(upload_to='product_images/%Y/%m/%d/', null=True, blank=True, default=None,
                               verbose_name="Изображение")
+    quantity = models.IntegerField(null=True, blank=True, verbose_name="Общее количество")
     material = models.CharField(max_length=255, blank=True, verbose_name="Материал")
     description = models.TextField(blank=True, verbose_name="Описание товара")
     vendor_code = models.IntegerField(null=True, blank=True, default=None, unique=True, verbose_name="Артикул")
@@ -36,7 +37,7 @@ class Product(models.Model):
         ]
 
     def get_absolute_url(self):
-        return reverse('product', kwargs={"product_slug": self.slug})
+        return reverse('product_detail', kwargs={"product_slug": self.slug})
 
 
 class Category(models.Model):
