@@ -141,3 +141,24 @@ AUTH_USER_MODEL = 'users.User'
 
 LOGIN_REDIRECT_URL = 'home'  # Явный путь при успешном входе на сайте
 LOGOUT_REDIRECT_URL = 'users:login'  # путь при успешном выходе с сайта
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'users.authentication.EmailAuthBackend',
+]
+
+DEFAULT_USER_IMAGE = '/media/users/default.jpeg'   # путь для дефолтной фотографии пользователя
+
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  для работы в консоли
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'mydjangotraining@yandex.ru'
+EMAIL_HOST_PASSWORD = 'uwiecnxnscifbsej'
+EMAIL_USE_SSL = True
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER   # email по умолчанию с которого будут отправляться письма
+SERVER_MAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
