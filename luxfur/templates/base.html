@@ -19,14 +19,16 @@
                 <li class="main-menu"><p><a href="#">{{m.title}}</a></p></li>
             {% endfor %}
             {% if user.is_authenticated %}
-                <li> {{user.username}} |
+            <li> <a href="{% url 'users:profile' %}">{{user.username}}</a> |
                     <form method="post" action="{% url 'users:logout' %}">
                         {% csrf_token %}
                         <button type="submit">Выйти</button>
                     </form>
                 </li>
             {% else %}
-                <li><a href="{% url 'users:login' %}">Авторизация</a></li>
+                <li><a href="{% url 'users:login' %}">Авторизация</a> |
+                    <a href="{% url 'users:register' %}">Регистрация</a></li>
+
             {% endif %}
 
 
