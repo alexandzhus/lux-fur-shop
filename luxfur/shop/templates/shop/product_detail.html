@@ -8,12 +8,16 @@
     <h1>{{product.name}}</h1>
 
     <p>Описание: {{product.description}}</p>
-    <p>Общее кол-во: {{product.quantity}}</p>
+    {% if  product.quantity is None %}
+        <p>Нет в наличии</p>
+    {% else %}
+        <p>Общее кол-во: {{product.quantity}}</p>
+    {% endif %}
     <p>Материал изделия: {{product.material}}</p>
     <p>Высота: {{product.height}}</p>
     <p>Длина: {{product.length}}</p>
     <p>Ширина: {{product.width}}</p>
 
-{{ product.descriptions }}
+    <p><a href="{% url 'home' %}">Вернуться на главную</a></p>
 {% endblock %}
 
