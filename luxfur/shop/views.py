@@ -54,3 +54,10 @@ class DetailProduct(DetailView):
 
     def get_object(self, queryset=None):
         return get_object_or_404(Product, slug=self.kwargs[self.slug_url_kwarg])
+
+
+
+class Category(ListView):
+    context_object_name = 'category'
+    slug_url_kwarg = 'category_slug'
+    template_name = 'shop/category.html'
