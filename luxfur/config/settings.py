@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'orders.apps.OrdersConfig',
     'users.apps.UsersConfig',
+    'cart.apps.CartConfig',
+    
 
 ]
 
@@ -67,6 +69,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'shop.context_processors.get_shop_context',
+                'cart.context_processors.cart_context_processor',
             ],
         },
     },
@@ -149,6 +152,9 @@ AUTHENTICATION_BACKENDS = [
 
 DEFAULT_USER_IMAGE = '/media/users/default.jpeg'   # путь для дефолтной фотографии пользователя
 
+
+DEFAULT_PRODUCT_IMAGE = '/media/product_images/no_image.jpg'
+
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  для работы в консоли
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -162,3 +168,7 @@ EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER   # email по умолчанию с которого будут отправляться письма
 SERVER_MAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
+
+
+
+CART_SESSION_ID = 'cart'  #  это ключ, который будет использован для хранения корзины в сессии пользователя
