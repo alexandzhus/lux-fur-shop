@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Ваша корзина с покупками</h1>
+    <table class="cart">
+        <thead>
+            <tr>
+                <th>Изображение</th>
+                <th>Товар</th>
+                <th>Количество товара</th>
+                <th>Цена</th>
+                <th>Общая стоимость</th>
+                <th>Очистить корзину</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart %}
+                {% with product=item.product %}
+                    <tr>
+                        <td>
+                            <a href="{{ product.get_absolute_url }}">
+                                <img src="
+                                    {% if product.image %}
+                                        {{product.image.url}}
+                                    {% else %}
+                                        {{default_image}}
+                                    {% endif %}
+                                " height="80" width="80">
+
+                            </a>
+                        </td>
+                        <td>{{product.name}}</td>
+                        <td>{{item.quantity}} шт.</td>
+                        <td>{{item.price}} руб.</td>
+                        <td>{{item.total_price}} руб.</td>
+                        <td><a href="{% url 'cart:cart_remove' product.id %}">Удалить товар из корзины</a></td>
+                    </tr>
+                {% endwith %}
+            {% endfor %}
+
+            <tr>
+                <td>Итого:</td>
+                <td colspan="4"></td>
+                <td>{{cart.get_total_price}}</td>
+            </tr>
+        </tbody>
+    </table>
+<p class="text-right">
+    <a href="{% url 'home' %}" class="button light">Закончить с покупками</a>
+    <a href="#" class="button">Checkout</a>
+</p>
+{% endblock %}
