@@ -2,7 +2,9 @@ from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
 
+
 from .models import *
+from cart.forms import CartAddProductForm
 
 
 # def index(request: HttpRequest) -> HttpResponse:
@@ -36,7 +38,8 @@ class ShopHome(ListView):
     context_object_name = 'products'
     template_name = 'shop/index.html'
     extra_context = {
-        'title': "Главная страница сайта Lux-Fur"
+        'title': "Главная страница сайта Lux-Fur",
+
     }
 
     def get_queryset(self):
@@ -50,7 +53,14 @@ class DetailProduct(DetailView):
     context_object_name = 'product'
     template_name = 'shop/product_detail.html'
     slug_url_kwarg = 'product_slug'
+
     extra_context = {"title": "Детальная информация о товаре"}
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        cart_product_form = CartAddProductForm()
+        context['cart_product_form'] = cart_product_form
+        return context
 
     def get_object(self, queryset=None):
         return get_object_or_404(Product, slug=self.kwargs[self.slug_url_kwarg])
