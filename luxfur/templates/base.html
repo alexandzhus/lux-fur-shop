@@ -8,6 +8,7 @@
     <link type="text/css" href="{% static 'shop/css/styles.css' %}" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{% static 'shop/images/main.ico' %}" type="image/x-icon"/>
+
 </head>
 <body>
 <!--блок главное меню-->
@@ -32,6 +33,21 @@
             {% if user.is_superuser %}
                 <li><a href="{% url 'admin:index' %}">Админка</a></li>
             {% endif %}
+            <li style="float: right;" title="Корзина">
+               <a href="{% url 'cart:cart_detail' %}">
+                   <img src="/media/product_images/cart.png" width="50" height="50" style="border-radius: 50%;">
+               </a>
+                 <p>
+                    {% with total_items=cart|length %}
+                        {% if cart|length > 0 %}
+                            {{ total_items }} товар(ов) в корзине
+                        {% else %}
+                            Ваша корзина пуста
+                        {% endif %}
+                    {% endwith %}
+            </p>
+            </li>
+
 
         </ul>
 
