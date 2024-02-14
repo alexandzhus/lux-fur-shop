@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load orders_tag %}
+
+
+{% block content %}
+<h1>Информация о заказе</h1>
+
+    <h3>Данные пользователя</h3>
+    <p>Имя пользователя: {{order.first_name}}</p>
+    <p>Фамилия:  {{order.last_name}}</p>
+    <p>E-mail: {{order.email}}</p>
+    <p>Номер телефона: {{order.phone_number}}</p>
+    <p>Город: {{order.city}}</p>
+    <p>Почтовый индекс: {{order.postal_code}}</p>
+    <p>Адрес: {{order.address}}</p>
+<hr>
+
+
+<h3> В заказе</h3>
+
+{% for item in order_item %}
+    <p>Название товара: {{item.product}}</p>
+    <p>Кол-во товара: {{item.product_amount}} шт.</p>
+    <p>Цена: {{item.product_price}} руб.</p>
+    <p>Итого: {{item.get_cost}} руб.</p>
+    <hr>
+{% endfor %}
+<p>Общая стоимость товаров: {{total_cost}} руб.</p>
+    <p><a href="{% url 'users:profile' %}">Вернуться в профиль</a></p>
+{% endblock %}
+
