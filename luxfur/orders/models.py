@@ -68,4 +68,8 @@ class OrderItems(models.Model):
         return self.product_price * self.product_amount
 
 
+    def get_name(self):
+        return self.product.name
+
+
 
