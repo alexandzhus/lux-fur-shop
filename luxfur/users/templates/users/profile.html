@@ -17,5 +17,10 @@
         {% endfor %}
         <p><button type="submit">Сохранить</button></p>
 </form>
+<hr>
+<h3>Ваши заказы:</h3>
+    {% for order in user_orders %}
+        <p><a href="{% url 'orders:order_detail' order.pk %}">Подробная информация о заказе №:{{order.id}}</a></p>
+    {% endfor %}
 
 {% endblock %}
