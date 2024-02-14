@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 
 from config import settings
+from orders.models import Order
 from .forms import *
 
 class Login(LoginView):
@@ -53,3 +54,9 @@ class ProfileUser(UpdateView):
 
     def get_object(self, queryset=None):
         return self.request.user
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user_orders = Order.objects.filter(user=self.request.user)
+        context['user_orders'] = user_orders
+        return context
