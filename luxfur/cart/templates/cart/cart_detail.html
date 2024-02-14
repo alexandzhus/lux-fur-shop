@@ -42,12 +42,14 @@
             <tr>
                 <td>Итого:</td>
                 <td colspan="4"></td>
-                <td>{{cart.get_total_price}}</td>
+                <td>{{cart.get_total_price}} руб.</td>
             </tr>
         </tbody>
     </table>
-<p class="text-right">
-    <a href="{% url 'home' %}" class="button light">Закончить с покупками</a>
-    <a href="#" class="button">Checkout</a>
-</p>
+
+<p class="text-right"> <a href="{% url 'home' %}" class="button light">Закончить с покупками.</a></p>
+{% if cart %}
+    <p class="text-right"> <a href="{% url 'orders:order_create' %}" class="button">Перейти к оформлению заказа</a></p>
+{% endif %}
+
 {% endblock %}
