@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
 
-from shop.models import Product
+from shop.models import Product, ProductImage
 from users.models import User
 
 
@@ -67,9 +67,6 @@ class OrderItems(models.Model):
     def get_cost(self):
         return self.product_price * self.product_amount
 
-
-    def get_name(self):
-        return self.product.name
 
 
 
