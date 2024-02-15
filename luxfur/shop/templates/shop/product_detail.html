@@ -2,9 +2,12 @@
 {% load static %}
 
 {% block content %}
+
 <p>Артикул: {{product.vendor_code}}</p>
 {% if product.image %}
-    <p><img src="{{product.image.url}}"></p>
+    {% for i in product_image %}
+        <img src="{{i.image.url}}" alt="{{i.product}}" title="{{i.product}}" class="image_block">
+    {% endfor %}
 {% else %}
     <p><img src="/media/product_images/no_image.jpg" width="100" height="100"></p>
 {% endif %}
