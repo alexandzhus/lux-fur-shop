@@ -18,7 +18,7 @@ class Product(models.Model):
     material = models.ForeignKey('Material', on_delete=models.PROTECT,
                                  blank=True, verbose_name="Материал", related_name='material')
     description = models.TextField(blank=True, verbose_name="Описание товара")
-    vendor_code = models.IntegerField(null=True, blank=True, default=None, unique=True, verbose_name="Артикул")
+    vendor_code = models.CharField(max_length=50, null=True, blank=True, default=None, unique=True, verbose_name="Артикул")
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Цена", null=True)
     time_create = models.DateTimeField(auto_now_add=True, verbose_name="Время создания")
     time_update = models.DateTimeField(auto_now=True, verbose_name="Время изменения")
