@@ -12,6 +12,8 @@ class Product(models.Model):
     """
     name = models.CharField(max_length=255, verbose_name="Название товара", db_index=True)
     slug = models.SlugField(max_length=255, unique=True, verbose_name="Slug", db_index=True)
+    image = models.ImageField(upload_to='product_images/%Y/%m/%d/', null=True, blank=True, default=None,
+                              verbose_name="Изображение")
     quantity = models.PositiveIntegerField(null=True, blank=True, verbose_name="Общее количество")
     material = models.ForeignKey('Material', on_delete=models.PROTECT,
                                  blank=True, verbose_name="Материал", related_name='material')
@@ -48,6 +50,12 @@ class ProductImage(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_image', verbose_name='Изображение товара')
     image = models.ImageField(upload_to='product_images/%Y/%m/%d/', null=True, blank=True, default=None,
                               verbose_name="Изображение")
+
+
+    class Meta:
+
+        verbose_name = "Изображение товара"
+        verbose_name_plural = "Изображение товаров"
 
 class Category(models.Model):
     """
