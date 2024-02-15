@@ -35,9 +35,6 @@ class OrderDetail(DetailView):
         context['order_item'] = order_item
         context['total_cost'] = total_cost
 
-
-
-
         return context
 
 
