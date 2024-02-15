@@ -59,7 +59,11 @@ class DetailProduct(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         cart_product_form = CartAddProductForm()
+        product: Product = self.object
+        product_image = ProductImage.objects.filter(product_id=product)
+        context['product_image'] = product_image
         context['cart_product_form'] = cart_product_form
+
         return context
 
     def get_object(self, queryset=None):
