@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView
@@ -35,6 +36,7 @@ class ShopHome(ListView):
     """
     Класс для отображения главной страницы сайта со списком товаров
     """
+    model = Product
     context_object_name = 'products'
     template_name = 'shop/index.html'
     extra_context = {
@@ -43,7 +45,17 @@ class ShopHome(ListView):
     }
 
     def get_queryset(self):
+        query = self.request.GET.get('search')
+        print(query)
+        if query:
+            product_list = Product.objects.filter(Q(name__iregex=query) | Q(price__icontains=query))
+
+            return product_list
+
         return Product.objects.all().select_related('category')
+
+
+
 
 
 class DetailProduct(DetailView):
@@ -68,6 +80,8 @@ class DetailProduct(DetailView):
 
     def get_object(self, queryset=None):
         return get_object_or_404(Product, slug=self.kwargs[self.slug_url_kwarg])
+
+
 
 
 
