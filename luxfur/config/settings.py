@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3)m1v&2r_b)#d*tzpu+r(gxb5(@g^0=3_bz=*6=phht2=vv$4t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -85,6 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+
     }
 }
 
@@ -153,7 +154,7 @@ AUTHENTICATION_BACKENDS = [
 DEFAULT_USER_IMAGE = '/media/users/default.jpeg'   # путь для дефолтной фотографии пользователя
 
 
-DEFAULT_PRODUCT_IMAGE = '/media/product_images/no_image.jpg'
+DEFAULT_PRODUCT_IMAGE = '/media/product_images/no_image.jpeg'
 
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"  для работы в консоли
 
@@ -172,3 +173,5 @@ EMAIL_ADMIN = EMAIL_HOST_USER
 
 
 CART_SESSION_ID = 'cart'  #  это ключ, который будет использован для хранения корзины в сессии пользователя
+
+
