@@ -1,0 +1,1013 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-02-15T07:03:46.275Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "user1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-02-15T07:03:55.505Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "user1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-02-15T07:05:39.628Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Цинк",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-02-15T07:05:45.179Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Железо",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-02-15T07:05:50.141Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Силумин",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-02-15T07:05:54.807Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Дерево",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-02-15T07:06:02.352Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Алюминий",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-02-15T07:06:11.566Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "Крепеж",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-02-15T07:06:20.214Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "Ролики мебельные",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-02-15T07:06:27.905Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Ручки для мебели",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-02-15T07:06:41.997Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Конфирмат",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-02-15T07:07:36.912Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Ролик для тумбы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-02-15T07:08:42.736Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Ручка скоба",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-02-15T07:08:55.686Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "ProductImage object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-02-15T07:09:03.880Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "ProductImage object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-02-15T07:09:28.759Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "ProductImage object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-02-15T07:09:37.525Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "ProductImage object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-02-15T07:10:40.731Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Order: 1; email: admin@gmail.com; create: 2024-02-15 07:10:40",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440 \\u0432 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0435\", \"object\": \"order: 1; product: \\u0420\\u043e\\u043b\\u0438\\u043a \\u0434\\u043b\\u044f \\u0442\\u0443\\u043c\\u0431\\u044b; price: 250\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440 \\u0432 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0435\", \"object\": \"order: 2; product: \\u041a\\u043e\\u043d\\u0444\\u0438\\u0440\\u043c\\u0430\\u0442; price: 10\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440 \\u0432 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0435\", \"object\": \"order: 3; product: \\u0420\\u0443\\u0447\\u043a\\u0430 \\u0441\\u043a\\u043e\\u0431\\u0430; price: 220\"}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 6,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 6,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 6,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 6,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Материал",
+    "content_type": 7,
+    "codename": "add_material"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Материал",
+    "content_type": 7,
+    "codename": "change_material"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Материал",
+    "content_type": 7,
+    "codename": "delete_material"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Материал",
+    "content_type": 7,
+    "codename": "view_material"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Товар",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Товар",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Товар",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Товар",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Изображение товара",
+    "content_type": 9,
+    "codename": "add_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Изображение товара",
+    "content_type": 9,
+    "codename": "change_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Изображение товара",
+    "content_type": 9,
+    "codename": "delete_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Изображение товара",
+    "content_type": 9,
+    "codename": "view_productimage"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Заказ",
+    "content_type": 10,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Заказ",
+    "content_type": 10,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Заказ",
+    "content_type": 10,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Заказ",
+    "content_type": 10,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Товар в заказе",
+    "content_type": 11,
+    "codename": "add_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Товар в заказе",
+    "content_type": 11,
+    "codename": "change_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Товар в заказе",
+    "content_type": 11,
+    "codename": "delete_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Товар в заказе",
+    "content_type": 11,
+    "codename": "view_orderitems"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 12,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 12,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 12,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 12,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "material"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "shop",
+    "model": "productimage"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "orders",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "orders",
+    "model": "orderitems"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "z2ivq3vmt97uz8qa7mz4q23gj9xrawbo",
+  "fields": {
+    "session_data": ".eJxVjDsOg0AMBe_iOlotKDZeyvQ5A_LaJpBEIPGpEHdPkGho38y8DVSmBeptv0Ej69I16-xT0xvUUMBly6IfHw5gbxleY9BxWKY-h0MJJ53DczT_Pk73ctDJ3P1rJtOoltGZTahQ5crLlhNSurslJyaNlKkq3DE5YopeSYuGxLFk2H9DlDtV:1rarLW:DQZtBRW6hDP0lS641lcEJVqxFQ_oaG9FLYQM7YkqKKM",
+    "expire_date": "2024-03-01T06:05:14.160Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Конфирмат",
+    "slug": "konfirmat",
+    "image": "product_images/2024/02/15/клнифрмат.jpeg",
+    "quantity": 152,
+    "material": 5,
+    "description": "Конфирма́т — одноэлементная стяжка для соединения деталей из ДСтП, МДФ, а также фанеры, массивной древесины и других относительно мягких и рыхлых материалов. Используется при изготовлении мебели, столярно-строительных и прочих изделий",
+    "vendor_code": "M/365-223",
+    "price": "15.00",
+    "time_create": "2024-02-15T07:06:41.990Z",
+    "time_update": "2024-02-15T07:06:41.990Z",
+    "category": 3,
+    "height": 1.5,
+    "length": 15.0,
+    "width": 3.0
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Ролик для тумбы",
+    "slug": "rolik-dlya-tumby",
+    "image": "product_images/2024/02/15/rolk.jpeg",
+    "quantity": 5,
+    "material": 5,
+    "description": "Колеса (ролики) поворотные мебельные с фланецем и стопором для стола тумбы комода, на паркет ламинат плитку линолеум, набор, комплек",
+    "vendor_code": "sd223444",
+    "price": "250.00",
+    "time_create": "2024-02-15T07:07:36.908Z",
+    "time_update": "2024-02-15T07:07:36.908Z",
+    "category": 2,
+    "height": 15.0,
+    "length": 2.0,
+    "width": 33.0
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Ручка скоба",
+    "slug": "ruchka-skoba",
+    "image": "",
+    "quantity": 7,
+    "material": 1,
+    "description": "Скоба – П-образная или полукруглая стационарная ручка без врезки. Она не нажимается, не поворачивается, не управляет замком – вся суть ее работы укладывается в принцип «тяни-толкай»",
+    "vendor_code": "RSB-348392",
+    "price": "220.00",
+    "time_create": "2024-02-15T07:08:42.732Z",
+    "time_update": "2024-02-15T07:08:42.732Z",
+    "category": 3,
+    "height": 4.0,
+    "length": 25.0,
+    "width": 6.0
+  }
+},
+{
+  "model": "shop.productimage",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "image": "product_images/2024/02/15/конфирмат_мебельеый.jpeg"
+  }
+},
+{
+  "model": "shop.productimage",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "image": "product_images/2024/02/15/конфрмат_2.jpeg"
+  }
+},
+{
+  "model": "shop.productimage",
+  "pk": 3,
+  "fields": {
+    "product": 2,
+    "image": "product_images/2024/02/15/тумба.jpeg"
+  }
+},
+{
+  "model": "shop.productimage",
+  "pk": 4,
+  "fields": {
+    "product": 2,
+    "image": "product_images/2024/02/15/тумба1.jpeg"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Крепеж",
+    "slug": "krepezh"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Ролики мебельные",
+    "slug": "roliki-mebelnye"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Ручки для мебели",
+    "slug": "ruchki-dlya-mebeli"
+  }
+},
+{
+  "model": "shop.material",
+  "pk": 1,
+  "fields": {
+    "name": "Цинк",
+    "slug": "cink"
+  }
+},
+{
+  "model": "shop.material",
+  "pk": 2,
+  "fields": {
+    "name": "Железо",
+    "slug": "zhelezo"
+  }
+},
+{
+  "model": "shop.material",
+  "pk": 3,
+  "fields": {
+    "name": "Силумин",
+    "slug": "silumin"
+  }
+},
+{
+  "model": "shop.material",
+  "pk": 4,
+  "fields": {
+    "name": "Дерево",
+    "slug": "derevo"
+  }
+},
+{
+  "model": "shop.material",
+  "pk": 5,
+  "fields": {
+    "name": "Алюминий",
+    "slug": "alyuminij"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "first_name": "admin",
+    "last_name": "admin1",
+    "email": "admin@gmail.com",
+    "phone_number": "+7978 74 58 576",
+    "address": "Ul.Pupkina",
+    "postal_code": "399-444",
+    "city": "Sevastopol",
+    "time_create": "2024-02-15T07:10:40.717Z",
+    "time_update": "2024-02-15T07:10:40.717Z",
+    "paid": false
+  }
+},
+{
+  "model": "orders.orderitems",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 2,
+    "product_amount": 3,
+    "product_price": "250.00"
+  }
+},
+{
+  "model": "orders.orderitems",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "product": 1,
+    "product_amount": 15,
+    "product_price": "10.00"
+  }
+},
+{
+  "model": "orders.orderitems",
+  "pk": 3,
+  "fields": {
+    "order": 1,
+    "product": 3,
+    "product_amount": 1,
+    "product_price": "220.00"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$pSsF3Qvs4US3fkxHDySE66$wKUxUHFkK/IrdjnWp9Jo8aMU6aKKX0bbrP0aCKw45Vs=",
+    "last_login": "2024-02-15T07:02:18.922Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-15T07:02:02.240Z",
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$WcyN6sv0vqVoErUFzr6Nvr$I8eZCxiuXtU1asK8e7k4BzOplPhkAmS9bagpzlU7fVA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-02-15T07:03:45Z",
+    "avatar": "",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
