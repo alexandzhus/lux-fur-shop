@@ -49,7 +49,6 @@ class ShopHome(ListView):
         print(query)
         if query:
             product_list = Product.objects.filter(Q(name__iregex=query) | Q(price__icontains=query))
-
             return product_list
 
         return Product.objects.all().select_related('category')
