@@ -6,6 +6,8 @@ from .forms import OrderCreateForm
 from .models import *
 from cart.cart import Cart
 
+from .tasks import order_created
+
 # class OrderCreate(CreateView):
 #     form_class = OrderCreateForm
 #     template_name = 'orders/order_form.html'
@@ -53,6 +55,7 @@ def order_create(request):
                                           product_price=item['price'])
 
                 cart.clear()
+                order_created.delay(order.id)
                 data = {
                     'order': order,
                 }
