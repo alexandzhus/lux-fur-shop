@@ -7,16 +7,15 @@ from django.contrib.auth.models import User
 class LoginUserForm(AuthenticationForm):
     """
     Класс формы для отображения полей модели user.
-    Используется для аутнтификации пользователей.
+    Используется для аутентификации пользователей.
     """
 
-    username = forms.CharField(max_length=255, label="Логин")
+    username = forms.CharField(max_length=150, label="Логин")
     password = forms.CharField(label="Пароль", widget=forms.PasswordInput)
 
     class Meta:
         model = get_user_model()
         field = ['username', 'password']
-
 
 
 class UserRegisterForm(UserCreationForm):
@@ -40,7 +39,6 @@ class UserRegisterForm(UserCreationForm):
         return email
 
 
-
 class UserProfileForm(forms.ModelForm):
     username = forms.CharField(disabled=True, label='Логин')
     email = forms.CharField(disabled=True, label="E-mail")
@@ -53,5 +51,3 @@ class UserProfileForm(forms.ModelForm):
             'first_name': 'Имя',
             'last_name': 'Фамилия'
         }
-
-
