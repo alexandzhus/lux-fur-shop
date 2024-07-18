@@ -18,7 +18,8 @@ class Product(models.Model):
     material = models.ForeignKey('Material', on_delete=models.PROTECT,
                                  blank=True, verbose_name="Материал", related_name='material')
     description = models.TextField(blank=True, verbose_name="Описание товара")
-    vendor_code = models.CharField(max_length=50, null=True, blank=True, default=None, unique=True, verbose_name="Артикул")
+    vendor_code = models.CharField(max_length=50, null=True, blank=True, default=None, unique=True,
+                                   verbose_name="Артикул")
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Цена", null=True)
     time_create = models.DateTimeField(auto_now_add=True, verbose_name="Время создания")
     time_update = models.DateTimeField(auto_now=True, verbose_name="Время изменения")
@@ -45,17 +46,16 @@ class Product(models.Model):
         return reverse('product_detail', kwargs={"product_slug": self.slug})
 
 
-
 class ProductImage(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_image', verbose_name='Изображение товара')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product_image',
+                                verbose_name='Изображение товара')
     image = models.ImageField(upload_to='product_images/%Y/%m/%d/', null=True, blank=True, default=None,
                               verbose_name="Изображение")
 
-
     class Meta:
-
         verbose_name = "Изображение товара"
         verbose_name_plural = "Изображение товаров"
+
 
 class Category(models.Model):
     """
